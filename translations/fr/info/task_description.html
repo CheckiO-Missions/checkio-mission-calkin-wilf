@@ -1,0 +1,51 @@
+<!-- Describe task in general -->
+
+<p style="text-align: justify;">
+    Les nœuds du site <a target="_blank" href="https://en.wikipedia.org/wiki/Calkin%E2%80%93Wilf_tree">Calkin–Wilf tree</a>, lus dans l'ordre des niveaux de manière à ce que les éléments de chaque niveau soient lus de gauche à droite, produisent la séquence linéaire de tous les nombres rationnels positifs possibles. Presque comme par magie, cette construction garantit que chaque fraction entière positive apparaîtra exactement une fois dans cette séquence. Plus délicieux encore, cette construction permet à chaque nombre rationnel d'apparaître sous sa forme réduite la plus basse! 
+</p>
+
+<p style="text-align: justify;">
+    L'arbre a pour racine le nombre 1 (1/1), et tout nombre rationnel exprimé en termes les plus simples comme la fraction a/b a pour deux enfants les nombres a/(a + b) et (a + b)/b.
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}calkin-wilf.svg" alt="example" style="max-height: 200px"/>
+</p>
+
+<p style="text-align: justify;">
+    Votre fonction doit renvoyer le <code>n</code>:ème élément de cette séquence. Notez qu'une fois que vous avez atteint la position <code>n//2 + 1</code>, la file d'attente contient déjà le résultat dont vous avez besoin, ce qui vous permet d'économiser beaucoup de temps et d'espace en ne trouvant pas de nouvelles valeurs. En outre, la page Wikipedia liée et d'autres sources fournissent des raccourcis supplémentaires pour accéder à la position donnée plus rapidement que si vous vous y rendiez à la dure, un élément à la fois.
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Entrée:</strong> Entier <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Sortie:</strong> Deux entiers. 
+</p>
+
+
+<p>
+    <strong>Exemples:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<!-- <p>
+    <strong>Preconditions:</strong>
+    <ul>
+    <li><i>both given ints should be between -1000 and 1000</i></li>
+    </ul>
+</p> -->
+<p><i>La mission est extraite de <span>Python CCPS 109</span>. Elle est enseignée à <span>Ryerson Chang School of Continuing Education</span> par <a href="https://github.com/ikokkari">Ilkka Kokkarinen</a></i></p>
