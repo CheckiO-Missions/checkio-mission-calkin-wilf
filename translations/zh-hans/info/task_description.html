@@ -1,0 +1,51 @@
+<!-- Describe task in general -->
+
+<p style="text-align: justify;">
+    <a target="_blank" href="https://en.wikipedia.org/wiki/Calkin%E2%80%93Wilf_tree">Calkin–Wilf tree</a> 的节点，如果按照从左到右的顺序逐级读取，就会产生所有可能的正有理数的线性序列。几乎就像变魔术一样，这种构造保证了每一个正整数分数都能在这个序列中准确地出现一次。更令人高兴的是，这种结构还能使每个有理数都以其最低还原形式出现！ 
+</p>
+
+<p style="text-align: justify;">
+    这棵树的根是数字 1 (1/1)，任何用最简单的形式表示为分数 a/b 的有理数都有两个子数 a/(a + b) 和 (a + b)/b 。
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}calkin-wilf.svg" alt="example" style="max-height: 200px"/>
+</p>
+
+<p style="text-align: justify;">
+    您的函数应返回该序列的<code>n</code>:th 元素。请注意，一旦到达<code>n//2 + 1</code> 的位置，队列中就已经包含了所需的结果，因此无需查找任何新值，从而节省了大量的时间和空间。此外，链接的维基百科页面和其他来源还提供了更多快捷方式，让您可以更快地跳转到给定位置，而不是一个元素一个元素地艰难跳转。
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>输入</strong>整数 <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+   <strong>输出： 两个整数</strong>两个整数 
+</p>
+
+
+<p>
+    <strong>示例：</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<!-- <p>
+    <strong>Preconditions:</strong>
+    <ul>
+    <li><i>both given ints should be between -1000 and 1000</i></li>
+    </ul>
+</p> -->
+<p><i>任务取自<span>Python CCPS 109</span> 。它是由<span>Ryerson Chang School of Continuing Education</span> 教授的。<a href="https://github.com/ikokkari">Ilkka Kokkarinen</a></i></p>
