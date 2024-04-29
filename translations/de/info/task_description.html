@@ -1,0 +1,51 @@
+<!-- Describe task in general -->
+
+<p style="text-align: justify;">
+    Die Knoten der <a target="_blank" href="https://en.wikipedia.org/wiki/Calkin%E2%80%93Wilf_tree">Calkin–Wilf tree</a>, wenn sie in der Reihenfolge der Ebenen gelesen werden, so dass die Elemente in jeder Ebene von links nach rechts gelesen werden, ergeben die lineare Folge aller möglichen positiven rationalen Zahlen. Fast wie von Zauberhand garantiert diese Konstruktion, dass jeder positive ganzzahlige Bruch genau einmal in dieser Folge vorkommt. Noch erfreulicher ist, dass diese Konstruktion dafür sorgt, dass jede rationale Zahl in ihrer niedrigsten reduzierten Form auftritt! 
+</p>
+
+<p style="text-align: justify;">
+    Die Wurzel des Baums ist die Zahl 1 (1/1), und jede rationale Zahl, die im einfachsten Fall als Bruch a/b ausgedrückt wird, hat als ihre beiden Kinder die Zahlen a/(a + b) und (a + b)/b.
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}calkin-wilf.svg" alt="example" style="max-height: 200px"/>
+</p>
+
+<p style="text-align: justify;">
+    Ihre Funktion sollte das <code>n</code>:-te Element dieser Folge zurückgeben. Beachten Sie, dass die Warteschlange, sobald Sie die Position <code>n//2 + 1</code> erreicht haben, bereits das benötigte Ergebnis enthält, so dass Sie eine Menge Zeit und Platz sparen können, wenn Sie keine neuen Werte suchen. Außerdem bieten die verlinkte Wikipedia-Seite und andere Quellen zusätzliche Abkürzungen, mit denen Sie schneller an die angegebene Position gelangen, als wenn Sie sich mühsam Element für Element dorthin vorarbeiten.
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Eingabe:</strong> Ganzzahl <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Ausgabe:</strong> Zwei ganze Zahlen. 
+</p>
+
+
+<p>
+    <strong>Beispiele:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<!-- <p>
+    <strong>Preconditions:</strong>
+    <ul>
+    <li><i>both given ints should be between -1000 and 1000</i></li>
+    </ul>
+</p> -->
+<p><i>Die Mission wurde von <span>Python CCPS 109</span> übernommen. Sie wird für <span>Ryerson Chang School of Continuing Education</span> von <a href="https://github.com/ikokkari">Ilkka Kokkarinen</a></i></p>
