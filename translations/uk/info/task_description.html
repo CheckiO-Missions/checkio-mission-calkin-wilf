@@ -1,0 +1,51 @@
+<!-- Describe task in general -->
+
+<p style="text-align: justify;">
+    Вузли <a target="_blank" href="https://en.wikipedia.org/wiki/Calkin%E2%80%93Wilf_tree">Calkin–Wilf tree</a>, якщо їх читати по рівням так, щоб елементи кожного рівня читалися зліва направо, дають лінійну послідовність усіх можливих додатних раціональних чисел. Майже як за помахом чарівної палички, ця конструкція гарантує, що кожен натуральний дріб з'явиться у цій послідовності рівно один раз. Що ще більш приємно, ця конструкція змушує кожне раціональне число з'являтись у своїй найнижчій скороченій формі! 
+</p>
+
+<p style="text-align: justify;">
+    Корінь дерева лежить у числі 1 (1/1), а будь-яке раціональне число, яке найпростіше виражається дробом a/b, має двох дочірніх чисел a/(a + b) і (a + b)/b.
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}calkin-wilf.svg" alt="example" style="max-height: 200px"/>
+</p>
+
+<p style="text-align: justify;">
+    Ваша функція повинна повернути <code>n</code>:ий елемент цієї послідовності. Зауважте, що коли ви досягаєте позиції <code>n//2 + 1</code>, черга вже містить потрібний вам результат, тому ви можете заощадити значний шматок часу і простору, не знаходячи нових значень. Крім того, на сторінці Вікіпедії та в інших джерелах можна знайти додаткові ярлики для швидкого переходу у потрібну позицію, а не торувати важкий шлях по одному елементу за раз.
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Вхідні дані:</strong> Ціле число <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Вихідні дані:</strong> Два цілих числа. 
+</p>
+
+
+<p>
+    <strong>Пояснення:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<!-- <p>
+    <strong>Preconditions:</strong>
+    <ul>
+    <li><i>both given ints should be between -1000 and 1000</i></li>
+    </ul>
+</p> -->
+<p><i>Завдання взято з сайту <span>Python CCPS 109</span>. Його розв'язано для <span>Ryerson Chang School of Continuing Education</span> за допомогою <a href="https://github.com/ikokkari">Ilkka Kokkarinen</a></i></p>
